@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Yuji+Boku&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="./practiceStyles.css">
+    <title>Practice task</title>
+</head>
+<body>
+    <div class="container">
+        <div class="testArea" id="testArea">
+            <h1 class="testTitle" id="testTitle">Hi! This is a quick math test because I couldn't think of another topic. Enjoy...I guess</h1>
+            <button id="startButton" class="buttonBig">Start the test</button>
+        </div>
+        <div class="questionArea" id="questionArea">
+            <h3 id="questionNumber"></h3>
+            <div class="options" id="optionsContainer">
+            </div>
+            <div class="writtenAnswerContainer" id="writtenAnswerContainer">
+            </div>
+            <button id="submitAndCheckButton" class="buttonSmall">Submit</button>
+            <p id="result"></p>
+            <button id="nextButton" class="buttonSmall">Next question</button>
+            <button id="finishButton" class="buttonSmall">Finish the Test</button>
+        </div>
+        <div class="finishContainer" id="finishContainer">
+            <div class="finishTextAndScore">
+                <h2 class="finishText" id="finishText">Congratulations! Your score is:</h2>
+                <p id="finalScore" class="finalScore"></p>
+            </div>
+            <button id="restartButton" class="buttonBig">Start again</button>
+        </div>
+    </div>
+    <script src="./practiceScript.js"></script>
+</body>
+</html>

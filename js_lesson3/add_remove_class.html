@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Adding and removing classes</title>
+    <style>
+        .highlight {
+            color: red;
+            font-weight: bold;
+        }
+    </style>
+</head>
+<body>
+    <p id="text">This is a text.</p>
+    <button onclick="toggleHighlight()">Switch Style</button>
+
+    <script>
+        function toggleHighlight() {
+            document.getElementById("text").classList.toggle("highlight");
+        }
+    </script>
+</body>
+</html>

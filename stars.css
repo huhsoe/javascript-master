@@ -1,0 +1,24 @@
+.rating {
+    border: 1px solid grey;
+    border-radius: 10px;
+    width: 100%;
+    max-width: 172px;
+    display: flex;
+    flex-direction: row-reverse;
+    padding: 10px;
+    justify-content: center;
+}
+
+.rating input[type="radio"] {
+  display: none;
+  opacity: 0;
+}
+
+.rating label {
+  color: lightgrey;
+  font-size: 40px;
+}
+
+.rating input:checked ~ label {
+  color: rgb(255, 0, 162);
+}

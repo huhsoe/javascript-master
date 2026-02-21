@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Confirm</title>
+</head>
+<body>
+    <script>
+        const isSure = confirm('Are you sure?');
+        if (isSure) {
+            document.body.innerHTML = "<h1>Youve decided to continue</h1>";
+        } else {
+            document.body.innerHTML = "<h1>Youve declined</h1>";
+        }
+    </script>
+</body>
+</html>
