@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>my rpg game</title>
+</head>
+<body>
+    <div id="stats">
+        <p>Здоровье: <span id="hp">100</span></p> <!-- ID изменен с health на hp -->
+        <p>Уровень: <span id="level">1</span></p>
+    </div>
+
+    <!-- Здесь будут появляться сообщения игры -->
+    <div id="log"></div>
+    
+    <!-- Здесь будут появляться кнопки -->
+    <div id="controls"></div>
+
+    <div id="stats"></div>
+<div id="controls">
+    <button onclick="move ('Лес')">Идти в лес</button>
+    <button onclick="move ('Пещера')">Идти в пещеру</button>
+    <button onclick="actionAttack()">Атаковать</button>
+    <button onclick="resetGame()" style="color: red;">СБРОС</button>
+</div>
+<div id="log" style="height: 200px; overflow-y: scroll; border: 1px solid #ccc;"></div>
+
+    <script src="game.js"></script>
+</body>
+
+</html>

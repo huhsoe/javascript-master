@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css?v=7">
+    <title>my rpg game</title>
+</head>
+<body>
+    <div id="stats-panel">
+        <p>Здоровье: <span id="hp">100</span></p>
+        <p>Уровень: <span id="level">1</span></p>
+    </div>
+    <div id="inventory-panel">
+        <p>Инвентарь:</p>
+        <div id="inventory">
+            <p>пусто</p>
+        </div>
+    </div>
+
+    <div id="notification-area"></div>
+    <div class="box">
+        <div class="game_container">
+            <div class="game_scene start_screen" id="scene">
+                <div id="scene-darkness"></div>
+                <div id="battle-hud" class="hidden">
+                    <div>Враг: <span id="enemy-name">—</span></div>
+                    <div>HP врага: <span id="enemy-hp">—</span></div>
+                    <div>Ваше HP: <span id="player-battle-hp">—</span></div>
+                </div>
+
+                <div class="text_panel">
+                    <h3 class="typewriter">Добро пожаловать в игру!</h3>
+                </div>
+                <div id="choices">
+                    
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="game.js"></script>
+</body>
+
+</html>
