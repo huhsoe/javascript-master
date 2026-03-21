@@ -1070,6 +1070,7 @@ function stabilizePageText(element, text, maxLines = 3) {
 
 function showStartScreen() {
     const scene = document.getElementById("scene");
+    document.getElementById("scene-darkness").style.opacity = "0";
     scene.classList.add("start_screen");
 
     runScene(
@@ -3824,6 +3825,11 @@ function finalBossLastWords() {
 
 function endingScene() {
     hideMonsterIcon();
+
+    const darkness = document.getElementById("scene-darkness");
+    if (darkness) {
+        darkness.style.opacity = "1"; 
+    }
 
     runScene(
         "Вы открываете глаза.",
